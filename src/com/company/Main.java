@@ -10,8 +10,12 @@ public class Main {
         System.out.println(t2);
     }
 
-    private static String cat(int start, int end)
+    private static String cat(int start,  int end)
     {
-        //Code goes here
+        StringBuffer sb = new StringBuffer();
+        for (int i = start; i < end - start; i++){
+        sb.append(i);
+    }
+        return sb.toString();
     }
 }
